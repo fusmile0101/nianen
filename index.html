@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta name="keywords" content="生命钻石,生命葬礼,生前契约,生命纪念,生命天使,殡葬人才交流,生命钻石,生命葬礼,生前契约,生命纪念,生命天使,殡葬人才交流" />
+	<meta name="description" content="重庆念恩文化传播有限公司成立于2013年，以’弘扬生命礼仪文化，创造人生归属价值‘为服务宗旨，是专注于民俗文化研究及推广，工艺品开发推广，提供民俗礼仪服务，市场营销策划等服务。" />
+	<title>念恩文化</title>
+	<link rel="stylesheet" href="./css/_nesj.css">
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.js" ></script>
+	<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+
+</head>
+<body class="wrap">
+	<!-- 头部  -->
+
+	<div class="header">
+		<a href="./" class="logo"><img src="./picture/logo.png" /></a>
+		<a href="javascript:;" class="xl"></a>
+	</div>
+	<div class="nv clearfix">
+		<a href="javascript:close();" class="close"></a>
+		<ul class="hid">
+			<a href="./" class="lg"><img src="./picture/logo.png" /></a>
+			<li class="li1"><a href="./" class="lia">首页<p>Home</p></a></li>
+			<li class="li1"><a href="javascript:;" class="lia">念恩项目<p>project</p></a>
+				<ul class="ul1">
+					<li><a href="/project/diamond/diamond/">生命钻石</a></li><li><a href="/html/2015-01-30/14.html">生命葬礼</a></li><li><a href="/html/2015-01-30/13.html">生前契约</a></li><li><a href="/project/memorial/">生命纪念</a></li><li><a href="/html/201605/81.html">生命天使</a></li><li><a href="/project/talent/">人才交流</a></li>				 </ul>
+			 </li>
+ 			<li class="li1"><a href="javascript:;" class="lia">合作伙伴<p>Partner</p></a>
+				<ul class="ul1">
+					<li><a href="/hzhb/cemetery/" class="lid36">陵园公墓</a></li><li><a href="/hzhb/funeral-directors/" class="lid37">殡仪服务</a></li><li><a href="/hzhb/pet/" class="lid38">宠物殡葬</a></li><li><a href="/hzhb/products/" class="lid39">殡葬用品</a></li> 				</ul>
+ 			</li>
+  			<li class="li1"><a href="javascript:;" class="lia">品牌故事<p>Brand Story</p></a>
+				 <ul class="ul1">
+					<li><a href="./html/201603/21.html" class="cid21">天堂树</a></li><li><a href="./html/201603/22.html" class="cid22">念世情</a></li><li><a href="./html/201603/23.html" class="cid23">念恩</a></li>				</ul>
+			</li>
+			<li class="li1"><a href="javascript:;" class="lia">资讯公告<p>news</p></a>
+				<ul class="ul1">
+					<li><a href="./news/company/" class="lid3">行业动态</a></li><li><a href="./news/industry/" class="lid4">新闻媒体</a></li><li><a href="./news/information/" class="lid40">企业资讯</a></li>				</ul>
+			</li>
+			<li class="li1"><a href="./html/about.html" class="lia">关于念恩<p>About us</p></a></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(".hid .li1").on("click",function(){
+			if($(this).attr("id") == "opts"){
+				$(".hid .li1 ul").slideUp(100)
+				$(this).attr("id","mu")
+				} else{
+					$(".hid .li1 ul").slideUp(100)
+					$(this).find("ul").slideDown(100)
+					$(".hid .li1").attr("id","1")
+					$(this).attr("id","opts")
+				}
+			})
+			$(".xl").on("click",function(){
+				if($(this).attr("id") != "opt"){
+				$(".nv").find(".hid").slideToggle(100)
+					$(this).attr("id","opt")
+				}else{
+					$(".nv").find(".hid").slideToggle(100)
+					$(this).attr("id","opt1")
+				}
+				$(".close").show();
+			})
+			function close(){
+				$('.hid').hide();
+				$(".close").hide();
+		}
+	</script>
+
+	<div class="fullslide" id="fullslide">
+		<div class="nv_bg"></div>
+		<div class="bd">
+			<ul>
+				<li><a href="#" target="_blank" title=""><img src="images/banner.jpg" _src="images/banner.jpg" alt=""></a></li>
+				<li><a href="#" target="_blank" title=""><img src="images/banner.jpg" _src="images/banner.jpg" alt=""></a></li>
+				<li><a href="#" target="_blank" title=""><img src="images/banner.jpg" _src="images/banner.jpg" alt=""></a></li>
+			</ul>
+		</div>
+		<div class="hd">
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		TouchSlide({
+			slideCell:"#fullslide",
+			titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell:".bd ul",
+			effect:"leftLoop",
+			autoPage:true,//自动分页
+			autoPlay:true, //自动播放
+			interTime:5000,
+			delayTime:2000
+		});
+	</script>
+
+	<!-- 主体内容  -->
+	<div class="i1 clearfix">
+		<a href="./project/">
+			<img src="picture/ico1.png" />
+			<p>生命钻石</p>
+			<span>Life diamond</span>
+		</a>
+		<a href="./project/">
+			<img src="picture/ico2.png" />
+			<p>生命葬礼</p>
+			<span>Life funeral</span>
+		</a>
+		<a href="./project/">
+			<img src="picture/ico3.png" />
+			<p>生前契约</p>
+			<span>The PrePlan</span>
+		</a>
+		<a href="./project/">
+			<img src="picture/ico4.png" />
+			<p>生命纪念</p>
+			<span>Life Memorial</span>
+		</a>
+		<a href="./project/">
+			<img src="picture/ico5.png" />
+			<p>生命天使</p>
+			<span>Life Angel</span>
+		</a>
+		<a href="./project/">
+			<img src="picture/ico6.png" />
+			<p>人才交流</p>
+			<span>Talent Exchange</span>
+		</a>
+	</div>
+
+	<div class="i2">
+		<div class="nianen"></div>
+		<div class="tabPanel common">
+			<span>news</span>
+			<ul class="hit_bt">
+				<li class="hit">行业动态</li>
+				<li>新闻媒体</li>
+				<li>企业资讯</li>
+			</ul>
+			<div class="panes">
+				<div class="pane" style="display:block;">
+					<ul>
+						<li> > <a href="/html/201605/39.html" target="_blank">“生前契约”可自己订制葬礼</a></li><li> > <a href="/html/201605/130.html" target="_blank">生前契约 老人更认可</a></li><li> > <a href="/html/201605/129.html" target="_blank">骨灰钻石葬是否终结了中国的宠物墓地？</a></li><li> > <a href="/html/201605/43.html" target="_blank">宠物骨灰钻石：最贴心的守护</a></li><li> > <a href="/html/201605/42.html" target="_blank">推进节地生态安葬 骨灰钻石葬成殡葬新理念</a></li>
+					</ul>
+				</div>
+				<div class="pane">
+					<ul>
+						<li> > <a href="/html/201605/131.html" target="_blank">重庆市首推生前契约可预订葬礼，你愿签吗？</a></li><li> > <a href="/html/201605/45.html" target="_blank">别忘了殡葬行业的公益属性</a></li><li> > <a href="/html/201605/44.html" target="_blank">无锡殡葬服务行业更加注重人文关怀</a></li><li> > <a href="/html/201605/40.html" target="_blank">民政部门欲引进新技术　骨灰二次燃烧可成“生命晶石</a></li><li> > <a href="/html/201605/38.html" target="_blank">北京宠物火化殡葬公司解决宠物尸体乱乱丢乱埋现象</a></li>					</ul>
+				</div>
+				<div class="pane">
+					<ul>
+						<li> > <a href="/html/201605/133.html" target="_blank">骨灰变钻石一卡收15万</a></li><li> > <a href="/html/201605/132.html" target="_blank">缅怀逝者新法：骨灰变钻石</a></li><li> > <a href="/html/201605/80.html" target="_blank">生命钻石(骨灰钻石）：用另一种方式怀念他</a></li><li> > <a href="/html/201605/79.html" target="_blank">宠物骨灰变钻石：它的离去是为了永恒的相聚</a></li><li> > <a href="/html/201605/41.html" target="_blank">念世情珠宝独家技术创新-钻石封存DNA</a></li>					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('.tabPanel .hit_bt li').click(function(){
+					$(this).addClass('hit').siblings().removeClass('hit');
+					$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();
+				})
+			})
+		</script>
+	</div>
+
+	<div class="i3">
+		<h1>contact us</h1>
+		<h3>400-038-0023</h3>
+		<p>电话：023-62016999</p>
+		<p>地址：重庆市沙坪坝区凤天大道49号23-20</p>
+		<div class="dd" id="nav">
+			<p class="set">友情链接</p>
+			<ul class="new">
+				<li><a href="http://www.nianen.cn" target="_blank">念恩生命</a></li><li><a href="http://www.nianshiqing.com" target="_blank">念世情生命钻石</a></li><li><a href="http://www.ljsly.cn" target="_blank">龙居山陵园</a></li><li><a href="http://www.cnbzrc.com" target="_blank">殡葬人才网</a></li>			</ul>
+		</div>
+
+		<script type="text/javascript">
+			$(function(){
+
+				$(".dd p").click(function(){
+					var ul=$(".new");
+					if(ul.css("display")=="none"){
+						ul.slideDown();
+					}else{
+						ul.slideUp();
+					}
+				});
+
+				$(".set").click(function(){
+					var _name = $(this).attr("name");
+					if( $("[name="+_name+"]").length > 1 ){
+						$("[name="+_name+"]").removeClass("show");
+						$(this).addClass("show");
+					} else {
+						if( $(this).hasClass("show") ){
+							$(this).removeClass("show");
+						} else {
+							$(this).addClass("show");
+						}
+					}
+				});
+
+				$(".dd li").click(function(){
+					var li=$(this).text();
+					$(".dd p").html(li);
+					$(".new").hide();
+					/*$(".set").css({background:'none'});*/
+					$("p").removeClass("select") ;
+				});
+			})
+		</script>
+	</div>
+
+	<!-- 尾部  -->
+
+	<div class="footer">
+		<ul class="common clearfix">
+			<li><a href="./project/">念恩项目</a></li>
+			<li><a href="./hzhb/">合作伙伴</a></li>
+			<li><a href="./story/">品牌故事</a></li>
+			<li><a href="./news/company/">资讯公告</a></li>
+			<li><a href="./html/about.html">关于念恩</a></li>
+		</ul>
+		<div class="copy">
+			<p>Copyright © 2016 重庆念恩文化传播有限公司 版权所有</p>
+			<p>备案号：渝ICP备13005302号</p>
+			<p><a href="http://www.paichen.net/"  title="重庆网站建设" target="_blank">技术支持</a>：<a href="http://www.paichen.net/" title="派臣" target="_blank">派臣科技</a></p>
+		</div>
+	</div>
+</body>
+</html>
